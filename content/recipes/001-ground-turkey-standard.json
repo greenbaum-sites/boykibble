@@ -1,0 +1,24 @@
+{
+  "title": "The Ground Turkey Standard",
+  "slug": "ground-turkey-standard",
+  "date": "2026-02-28",
+  "category": "bulk-bowls",
+  "ingredients": [
+    "ground turkey (8oz)",
+    "jasmine rice (1 cup cooked)",
+    "black beans (1/2 cup)",
+    "salsa",
+    "hot sauce",
+    "shredded cheese",
+    "spinach handful"
+  ],
+  "macros": {
+    "protein_g": 52,
+    "carbs_g": 48,
+    "fat_g": 14,
+    "fiber_g": 8,
+    "calories_approx": 530
+  },
+  "kibble_score": 7,
+  "commentary": "This is the default. The bowl that launched a thousand meal-prep Sundays. Ground turkey because it's cheap and lean, jasmine rice because it reheats well, black beans for fiber most kibble lacks. Not exciting. That's the point."
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Kibble of the Week",
+  "description": "A featured protein bowl with macros, ingredients, and commentary.",
+  "type": "object",
+  "required": ["title", "slug", "date", "ingredients", "macros", "kibble_score", "commentary"],
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Name of the bowl (e.g., 'The Ground Turkey Standard')"
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL-safe slug (e.g., 'ground-turkey-standard')"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Publication date (YYYY-MM-DD)"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["bulk-bowls", "office-kibble", "5-ingredient", "glp1-friendly"],
+      "description": "Recipe category"
+    },
+    "ingredients": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 3,
+      "maxItems": 7,
+      "description": "Short ingredient list, 5-7 items"
+    },
+    "macros": {
+      "type": "object",
+      "required": ["protein_g", "carbs_g", "fat_g", "calories_approx"],
+      "properties": {
+        "protein_g": { "type": "number" },
+        "carbs_g": { "type": "number" },
+        "fat_g": { "type": "number" },
+        "fiber_g": { "type": "number" },
+        "calories_approx": { "type": "number" }
+      }
+    },
+    "kibble_score": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10,
+      "description": "Kibble Score from 1-10 (placeholder scoring for now)"
+    },
+    "commentary": {
+      "type": "string",
+      "description": "2-3 sentences: why this bowl exists, who eats it"
+    },
+    "photo": {
+      "type": "string",
+      "description": "Path to bowl photo (optional for now)"
+    }
+  }
+}
