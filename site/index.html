@@ -1,1 +1,348 @@
-<!-- See full file in repo -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boy Kibble — High-protein, low-drama meals people actually eat every day.</title>
+  <meta name="description" content="Boy Kibble documents, analyzes, and upgrades the protein-bowl phenomenon — from meme to food system.">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://boykibble.co/">
+  <meta property="og:title" content="Boy Kibble — High-protein, low-drama meals people actually eat every day.">
+  <meta property="og:description" content="We document, analyze, and upgrade the protein-bowl phenomenon — from meme to food system.">
+  <meta property="og:image" content="https://boykibble.co/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@eatboykibble">
+  <meta name="twitter:title" content="Boy Kibble — High-protein, low-drama meals">
+  <meta name="twitter:description" content="We document, analyze, and upgrade the protein-bowl phenomenon — from meme to food system.">
+  <meta name="twitter:image" content="https://boykibble.co/assets/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+
+  <!-- Plausible Analytics (self-hosted or cloud — update domain after setup) -->
+  <script defer data-domain="boykibble.co" src="https://plausible.io/js/script.js"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300..700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- Navigation -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-wordmark" data-nav="home" aria-label="Boy Kibble home">Boy Kibble</a>
+      <ul class="nav-links" role="list">
+        <li><a href="#home" data-nav="home">Home</a></li>
+        <li><a href="#brief" data-nav="brief">Brief</a></li>
+        <li><a href="#recipes" data-nav="recipes">Recipes</a></li>
+        <li><a href="#notes" data-nav="notes">Notes</a></li>
+        <li><a href="#about" data-nav="about">About</a></li>
+        <li>
+          <button class="theme-toggle-btn" data-theme-toggle aria-label="Switch to dark mode">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </button>
+        </li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:var(--space-3);">
+        <button class="theme-toggle-btn mobile-theme-toggle" data-theme-toggle aria-label="Switch to dark mode" style="display:none;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#brief" data-nav="brief">Brief</a>
+      <a href="#recipes" data-nav="recipes">Recipes</a>
+      <a href="#notes" data-nav="notes">Notes</a>
+      <a href="#about" data-nav="about">About</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ==========================================
+         HOME PAGE
+         ========================================== -->
+    <div id="page-home" class="page active">
+
+      <!-- Hero -->
+      <section class="section section--hero">
+        <div class="container">
+          <h1 class="hero-headline">High-protein, low-drama meals people actually eat every day.</h1>
+          <p class="hero-subheadline">Boy Kibble documents, analyzes, and upgrades the protein-bowl phenomenon — from meme to food system.</p>
+          <p class="hero-body">Bulk-prepped bowls. Repetitive high-protein meals. The quiet infrastructure of how people actually fuel themselves when nobody is watching. We map the trend, publish the data, and show you how to evolve your kibble without adding friction.</p>
+
+          <form class="email-capture" id="hero-email-form" data-beehiiv-form onsubmit="return false;">
+            <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
+            <button type="submit">Get the Boy Kibble Brief</button>
+          </form>
+          <div class="email-success">Thanks! First issue drops soon.</div>
+        </div>
+      </section>
+
+      <!-- What is Boy Kibble? -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">What is Boy Kibble?</h2>
+          <p class="section-subtitle" style="max-width:65ch; line-height:1.7;">The term started as a TikTok joke — the masculine mirror of "girl dinner." But the behavior underneath it is real and growing. Millions of people eat some version of this every day: rice, ground meat, maybe an egg, maybe hot sauce, portioned into containers and consumed on repeat. It's not photogenic. It's not a recipe trend. It's infrastructure.</p>
+        </div>
+      </section>
+
+      <!-- Why It Matters -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Why It Matters</h2>
+          <div class="bullet-grid">
+            <div class="bullet-item">
+              <h3>Protein is the new default</h3>
+              <p>65% of shoppers bought protein-enriched snacks in 2025, and 71% think they need more daily protein.</p>
+            </div>
+            <div class="bullet-item">
+              <h3>Repetition beats aesthetics</h3>
+              <p>The most sustainable diets aren't the prettiest. They're the ones people actually stick to, day after day.</p>
+            </div>
+            <div class="bullet-item">
+              <h3>The infrastructure is invisible</h3>
+              <p>Meal prep, bulk cooking, and repetitive eating are massive behaviors with almost no dedicated brand, content, or tooling.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Data Point Callout -->
+      <section class="section" style="border-top: none; padding-top: 0;">
+        <div class="container">
+          <div class="data-point">
+            <div class="stat">65% of shoppers bought protein-enriched snacks in 2025.</div>
+            <div class="context">Source: Circana / Food Industry Association, 2025 protein trend data</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What We're Building -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">What We're Building</h2>
+          <div class="building-grid">
+            <div class="building-item">
+              <h3>Content Hub</h3>
+              <p>Recipes, macros, and commentary on real kibble bowls people actually eat.</p>
+            </div>
+            <div class="building-item">
+              <h3>The Boy Kibble Brief</h3>
+              <p>A periodic trend report on protein culture, eating behavior, and the data behind the bowls.</p>
+            </div>
+            <div class="building-item">
+              <h3>Tools (coming later)</h3>
+              <p>Macro tracking, kibble scoring, and meal planning for people who eat on repeat.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Latest -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Latest</h2>
+          <div class="latest-grid">
+            <article class="card">
+              <span class="card-tag">Kibble of the Week</span>
+              <h3 class="card-title">The Ground Turkey Standard</h3>
+              <p class="card-body">Ground turkey, jasmine rice, black beans, salsa, hot sauce, shredded cheese, spinach. 52g protein / ~530 cal. The default bowl that launched a thousand meal-prep Sundays.</p>
+              <div class="card-meta">Kibble Score: 7/10</div>
+            </article>
+            <article class="card">
+              <span class="card-tag">Field Note</span>
+              <h3 class="card-title">Why Protein Bowls Replaced Lunchtime Sandwiches</h3>
+              <p class="card-body">The sandwich had a 50-year run as the default American lunch. It's losing ground to bowls — and the reasons are more structural than nutritional.</p>
+              <div class="card-meta">February 2026</div>
+            </article>
+            <article class="card">
+              <span class="card-tag">Data Point</span>
+              <h3 class="card-title">71% Think They Need More Protein</h3>
+              <p class="card-body">A growing majority of consumers believe they don't get enough protein in their daily diet, driving the biggest shift in eating behavior since the low-fat era.</p>
+              <div class="card-meta">Circana / FIA 2025 Data</div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==========================================
+         BRIEF PAGE
+         ========================================== -->
+    <div id="page-brief" class="page">
+      <section class="section section--hero">
+        <div class="container container--narrow">
+          <h1 class="section-title" style="font-size:var(--text-2xl);">The Boy Kibble Brief</h1>
+          <p class="hero-subheadline">A periodic report on what people actually eat, why the protein trend won't slow down, and how to build meals that work.</p>
+          <p class="hero-body">The first issue is in progress. It covers: the real data behind the protein-bowl trend, what grocery and restaurant data tells us about eating behavior, and three macro-optimized upgrades to the standard kibble bowl.</p>
+
+          <h3 style="font-family:var(--font-display);font-size:var(--text-lg);margin-bottom:var(--space-4);">Get notified when it drops</h3>
+          <form class="email-capture" id="brief-email-form" data-beehiiv-form onsubmit="return false;">
+            <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
+            <button type="submit">Notify Me</button>
+          </form>
+          <div class="email-success">Thanks! First issue drops soon.</div>
+
+          <p class="brief-note">We'll also publish on Substack. No spam, no fluff, just the data and the meals.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==========================================
+         RECIPES PAGE
+         ========================================== -->
+    <div id="page-recipes" class="page">
+      <section class="section section--hero">
+        <div class="container">
+          <h1 class="section-title" style="font-size:var(--text-2xl);">Recipes</h1>
+          <p class="section-subtitle">Real bowls. Real macros. No aesthetic requirements.</p>
+
+          <div class="category-grid">
+            <div class="category-card">
+              <h3>Bulk Bowls</h3>
+              <p>Classic high-volume, high-protein meal prep bowls.</p>
+              <span class="tag-coming-soon">Coming Soon</span>
+            </div>
+            <div class="category-card">
+              <h3>Office Kibble</h3>
+              <p>What you can assemble at work with minimal effort.</p>
+              <span class="tag-coming-soon">Coming Soon</span>
+            </div>
+            <div class="category-card">
+              <h3>5-Ingredient Kibble</h3>
+              <p>Maximum protein, minimum shopping list.</p>
+              <span class="tag-coming-soon">Coming Soon</span>
+            </div>
+            <div class="category-card">
+              <h3>GLP-1 Friendly</h3>
+              <p>High-protein, high-fiber meals optimized for satiety.</p>
+              <span class="tag-coming-soon">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kibble of the Week -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Kibble of the Week</h2>
+          <div class="kibble-card">
+            <span class="kibble-tag">Kibble of the Week</span>
+            <h3>The Ground Turkey Standard</h3>
+            <p class="kibble-ingredients"><strong>Ingredients:</strong> ground turkey (8oz), jasmine rice (1 cup cooked), black beans (½ cup), salsa, hot sauce, shredded cheese, spinach handful</p>
+            <div class="kibble-macros">
+              <div class="macro-item"><span class="macro-value">52g</span><span class="macro-label">protein</span></div>
+              <div class="macro-item"><span class="macro-value">48g</span><span class="macro-label">carbs</span></div>
+              <div class="macro-item"><span class="macro-value">14g</span><span class="macro-label">fat</span></div>
+              <div class="macro-item"><span class="macro-value">8g</span><span class="macro-label">fiber</span></div>
+              <div class="macro-item"><span class="macro-value">~530</span><span class="macro-label">cal</span></div>
+            </div>
+            <div class="kibble-score">Kibble Score: 7/10</div>
+            <p class="kibble-commentary">"This is the default. The bowl that launched a thousand meal-prep Sundays. Ground turkey because it's cheap and lean, jasmine rice because it reheats well, black beans for fiber most kibble lacks. Not exciting. That's the point."</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==========================================
+         NOTES PAGE
+         ========================================== -->
+    <div id="page-notes" class="page">
+      <section class="section section--hero">
+        <div class="container container--narrow">
+          <h1 class="section-title" style="font-size:var(--text-2xl);">Field Notes</h1>
+          <p class="section-subtitle">Observations on how people actually eat.</p>
+        </div>
+      </section>
+
+      <section class="section" style="border-top:none; padding-top:0;">
+        <div class="container container--narrow">
+          <article class="field-note">
+            <div class="field-note-date">February 2026</div>
+            <h2 class="field-note-title">Why Protein Bowls Replaced Lunchtime Sandwiches</h2>
+            <div class="field-note-body">
+              <p>For the better part of five decades, the sandwich was the undisputed king of the American lunch. From ham and cheese on white bread to elaborate deli creations, the sandwich was portable, affordable, and universally understood. You didn't need instructions. You didn't need a microwave. You just ate it.</p>
+
+              <p>But sometime around 2018, something shifted. The rise of Chipotle-style assembly lines — where you point at ingredients and they build your bowl in front of you — created a new template for what lunch could look like. Not a sandwich. Not a salad, exactly. A bowl. Rice or greens at the base, a protein in the middle, toppings on top, sauce drizzled over everything. The format was simple enough to feel fast but customizable enough to feel personal.</p>
+
+              <p>The macro-awareness wave accelerated the transition. As more people started tracking protein, they ran the numbers on their turkey sandwich and discovered something uncomfortable: two slices of bread, a thin layer of deli meat, and some lettuce delivered maybe 20 grams of protein with 40+ grams of carbs. The same calories in a bowl format — skip the bread, double the protein, add beans or an egg — could hit 40-50 grams of protein with more fiber and a better nutrient profile. The math didn't lie, and once you saw it, you couldn't unsee it.</p>
+
+              <p>Meal prep culture sealed the deal. Sandwiches don't meal-prep well. The bread gets soggy. The lettuce wilts. The whole thing degrades in a container. Bowls, by contrast, were designed for containers. Rice reheats. Protein reheats. Beans reheat. You could make five bowls on Sunday and eat all week without textural compromise. The container became the plate, and the bowl became the format.</p>
+
+              <p>There's also a status component that's hard to ignore. Among gym-conscious eaters — the demographic that drives food trends on social media — the sandwich became coded as "not serious." It was what your parents packed you for school. A bowl with visible protein, colorful vegetables, and a drizzle of sriracha looked like you cared about your macros. The sandwich looked like you weren't trying. Unfair, maybe. But culture doesn't deal in fairness.</p>
+
+              <p>The sandwich isn't dead. It still dominates gas stations, delis, and anywhere speed matters more than optimization. But as the default lunch for the macro-aware, fitness-adjacent, meal-prepping population, it has been quietly but definitively replaced. The bowl won. Not because it tastes better — it often doesn't — but because it fits the infrastructure of how a growing number of people want to eat: high-protein, portioned, repeatable, and container-friendly.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==========================================
+         ABOUT PAGE
+         ========================================== -->
+    <div id="page-about" class="page">
+      <section class="section section--hero">
+        <div class="container container--narrow">
+          <h1 class="section-title" style="font-size:var(--text-2xl);">About Boy Kibble</h1>
+          <div class="about-body">
+            <p>Boy Kibble is a content and research project about the way people actually eat when nobody is watching: bulk-prepped bowls, repetitive high-protein meals, and the quiet infrastructure of the protein craze. We map the trend, publish the data, and show you how to evolve your kibble without adding friction.</p>
+
+            <p>The term started as a TikTok joke — the masculine mirror of "girl dinner." But the behavior underneath it is real and growing. Millions of people eat some version of this every day: rice, ground meat, maybe an egg, maybe hot sauce, portioned into containers and consumed on repeat. It's not photogenic. It's not a recipe trend. It's infrastructure.</p>
+
+            <p>We think that infrastructure deserves better than a meme. Boy Kibble exists to take the pattern seriously: document what people actually eat, analyze the macros and the market forces behind it, and build a system that helps people do it better — more protein, more fiber, less monotony, same low friction.</p>
+          </div>
+
+          <div class="built-by">
+            Built by <a href="https://greenbaumlabs.com" target="_blank" rel="noopener noreferrer">Greenbaum Labs</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        &copy; 2026 Boy Kibble. Built by <a href="https://greenbaumlabs.com" target="_blank" rel="noopener noreferrer">Greenbaum Labs</a>
+      </div>
+      <ul class="footer-links" role="list">
+        <li><a href="https://x.com/eatboykibble" target="_blank" rel="noopener noreferrer">X</a></li>
+        <li><a href="https://tiktok.com/@eatboykibble" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+        <li><a href="https://instagram.com/eatboykibble" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- App JS -->
+  <script src="./app.js" defer></script>
+</body>
+</html>
